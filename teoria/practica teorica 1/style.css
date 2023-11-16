@@ -1,0 +1,48 @@
+/*Selector for attributes */
+
+input[type=text] {
+    background-color: antiquewhite;
+}
+
+body{
+    background-color: purple;
+    text-align: center;
+    font-family: 'Lemon';
+    color:white;
+}
+
+input[name=nom]{
+    background-color: aquamarine;
+}
+
+input[name^=name] {
+    background-color: brown;
+}
+
+/* Transparency */
+ 
+form{
+    background-color: rgba(211,201,0,0.30);  /* Its with the a --> if not it will not be transparecy */
+    background-color: hsla(240,100%,80%, 0.35);  /*80% saturation, 0.35 --> brightness */
+}
+
+/* Make sometyng visible or not visible --> display-none, visability-hidden */
+/* Visisbility--> occupies space
+    Display--> does not occupy any space
+*/
+
+
+.boxshadow {
+    background-color: goldenrod;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+}
+
+.text-shadow {
+    text-shadow: 2px 3px ;
+}
+
+.linear-gradient {
+    background-color: linear-gardient(90deg, #ccc 0%, #121212 50%, #fff 100%);
+}
+
+animate__rubberBand

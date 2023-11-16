@@ -1,0 +1,66 @@
+@maincolor: #b4929;
+@defaul-size: 0.9em;
+
+body {
+    background-color: @maincolor;
+    font-size: @defaul-size;
+}
+
+
+//less --> @var: valor;
+//scss({})/sass(no{}) --> $vafr: valor;
+
+/* SCSS
+Nesting --> anidacion
+
+main {
+    margin: 0;
+    padding: 0;
+
+    article {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans.serif;
+        h1.title{
+            font-size: 4em;
+            font-weight: bold
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+    .mainfoot {
+        font-size: 0.7em;
+        padding: 1em 2em;
+    }
+}
+*/
+
+
+
+/* LESS
+body{
+    &:hover --> al hacer hover en el padre
+}
+
+.darktext{
+    xxx
+}
+p{
+    border: 1px;
+    .darktext
+*/
+
+/* SASS --> importar un x a otro, sin copiar todo
+.message{
+    xxx
+}
+.message, .succes, .error{
+    xxx --> podemos crear en mas de una clase
+}
+.succes{
+    @extend .message;
+    border; xx;
+}
+
+*/
+
+

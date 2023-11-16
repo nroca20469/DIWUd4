@@ -1,0 +1,4 @@
+1.- Install node.js
+2.- Terminal --> npm install bootstrap@5.3.2  --> not work? reboot computer
+3.- node_modules -> bootstrap --> scss -> bootstrap.scss
+4.- sass style/articleStyleScss.scss style/articleStyleScass.css

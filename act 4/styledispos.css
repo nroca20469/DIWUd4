@@ -1,0 +1,291 @@
+/*
+letra: #2D2A32
+background prod :#ABA194
+back: #CFCBCA
+filter: #A44A3F
+*/
+
+/* GENERALS */
+body {
+    background-color: #cfcbcabe;
+    padding: 5px;
+}
+
+header {
+    width: 100%;
+}
+
+a, strong, h1, span, div, li, button {
+    text-decoration: none;
+    color: #2D2A32;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #A44A3F;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+article {
+    position: static;
+    display: inline-block;
+    margin-left: 5px;
+    padding-block: 10px;
+}
+
+/* HEADER */
+#top_header {
+    position: relative;
+    text-align: center;     
+}
+
+#top_header img{
+    max-height: 80px;
+}
+
+.menu-element {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+/* SECTION */
+#products-filter {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    width: 100%;
+    background-color: #ABA194;
+    padding: 10px;
+}
+
+#products-filter  div{
+    font-size: 12px;
+    padding: 5px;
+}
+
+#product-listing {
+    margin-block-start: 5px;
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* ARTICLES */
+.image-container a img {
+    width: 250px;
+}
+
+.item-details span{
+    width: 100%;
+    display: block;
+    text-align: start;
+    font-size: 15px;
+}
+
+.item-details .product-name {
+    font-weight: bold;
+}
+
+/* FOOTER NOT FOOTER(end of the section) */
+#load-more-products {
+    text-align: center;
+}
+
+#load-more-products button {
+    border-radius: 3px;
+    border: 1px solid #2D2A32;
+}
+
+/* END MAIN */
+#back-to-top {
+    position: fixed;
+    float: right;
+    bottom: 40px;
+    right: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    display: block;
+}
+
+footer ul {
+    margin-block: 0;
+}
+
+
+/*Mas grandes que movil*/
+@media (max-width: 700px) {
+    .menu div {
+        text-align: center;
+    }
+
+    .menu {
+        text-align: center;
+    }
+
+    nav{
+        max-height: 400px;
+        min-height: 200px;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    aside nav ul {
+        padding-inline-start: 0;
+        margin-block-start: 0;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .list-group {
+        float: left;
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .list-group .menu2-element {
+        display: inline-block;
+        padding: 0 5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    section div h1 {
+        text-align: center;
+    }
+}
+
+
+/* Media between 700px and 999px(when it deforms the most) */
+@media (min-width: 700px) and (max-width: 999px) {
+    /* Menu */
+    .menu {
+        text-align: start;
+    }
+
+    .menu div {
+        position: absolute;
+        top: 117px;
+        right: 10px;
+    }
+
+    /* aside */
+    aside nav{
+        max-height: 100px;
+        margin-top: 20px;
+    }
+
+    aside nav ul {
+        padding-inline-start: 0;
+        margin-block-start: 0;
+        margin-top: 5px;
+        height: 76px;
+    }
+
+    .list-group {
+        float: left;
+        width: 40%;
+        text-align: center;
+        padding: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .list-group .menu2-element {
+        display: inline-block;
+        padding: 0 5px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    /* main sections of products */
+    section div:first-child{
+        display: inline;
+        padding: 0 5px; 
+    }
+
+    section div h1 {
+        text-align: center;
+    }
+
+    #product-listing{
+        margin-block-start: 5px;
+        display: inline-block;
+    }
+}
+
+
+/* Media for bigger screens than 1000px */
+@media(min-width: 1000px) {
+    /* menu */
+    .menu {
+        text-align: center;
+    }
+
+    .menu-element {
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu div {
+        position: absolute;
+        top: 107px;
+        right: 10px;
+    }
+
+    /* aside */
+    aside {
+        position: absolute;
+        left: 0;
+    } 
+
+    nav {
+        margin-block-start: 0;
+        padding-block-start: 0;
+    }
+
+    nav ul {
+        margin-block-start: 0;
+        padding-block-start: 0;
+    }
+
+    .list-group{
+        text-align: start;
+    }
+
+    .list-group ul{
+        margin-bottom: 10px;      
+        width: 100%; 
+        padding-inline-start: 15px;
+    }
+
+    .list-group ul li {
+        display: block; 
+        padding-block: 5px;
+        margin-left: 0;
+        
+    }
+
+    /* section */
+    section{
+        margin-left: 200px;
+    }
+}

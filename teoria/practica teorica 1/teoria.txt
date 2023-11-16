@@ -1,0 +1,8 @@
+CSS ATTIBUTES --> Select an element 
+
+
+a[target] --> aun sin la a --> coge si tiene un atributo de target, aun sin el nombre del atributo target
+[target=_black] --> 
+
+[target~=name] --> contains the word -> even if before or after another word, but not when the word is connected with - and with the word(s)
+[tarhet|=top] --> if it contain only the word top
